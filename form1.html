@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>  form one  </title>
+  <link rel="stylesheet" href="css/studentlist.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <div class="logo-details">
+      <div class="logo_name">School web</div>
+      <i class='bx bx-menu' id="btn">
+
+      </i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Search...">
+        <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="dashboard.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="addstudent_list.html">
+          <i class='bx bx-user'></i>
+          <span class="links_name">Registered Students</span>
+        </a>
+        <span class="tooltip">Registered Students</span>
+      </li>
+      <li>
+        <a href="chat.html">
+          <i class='bx bx-chat'></i>
+          <span class="links_name">Messages</span>
+        </a>
+        <span class="tooltip">Messages </span>
+      </li>
+      <li>
+        <a href="analytic.html">
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="links_name">Analytics</span>
+        </a>
+        <span class="tooltip">Analytics</span>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bx-heart'></i>
+          <span class="links_name">Saved</span>
+        </a>
+        <span class="tooltip">Saved</span>
+      </li>
+      <li>
+        <a href="setting.html">
+          <i class='bx bx-cog'></i>
+          <span class="links_name">Setting</span>
+        </a>
+        <span class="tooltip">Setting</span>
+      </li>
+      <li class="profile">
+        <div class="profile-details">
+          <img src="img/Pasted image.png" alt="profileImg">
+          <div class="name_job">
+            <div class="name">Daxel</div>
+            <div class="job">Web designer</div>
+          </div>
+        </div>
+        <i class='bx bx-log-out' id="log_out"></i>
+      </li>
+
+      <li>
+        <a href="add_student.html">
+          <i class='bx bx-plus-circle'></i>
+          <span class="links_name">Add Student</span>
+        </a>
+        <span class="tooltip">Add Student</span>
+      </li>
+    </ul>
+  </div>
+
+  <section class="home-section">
+
+    <div class="text">
+      <img src="img/Screenshot 2023-07-28 at 19-44-38 SMASHINGLOGO Preview.png" alt="web-picture" class="title-image">
+      <span class="title-text"> school web</span>
+    </div>
+
+    <div class="title">
+      <h1>registered students</h1>
+    </div>
+    <h3 class="h3">form one</h3>
+    <div class="table">
+
+      <table>
+        <tr>
+          <th>Student Name</th>
+          <th>class</th>
+          <th>parent/guardian</th>
+          <th>gender</th>
+          <th>phone number</th>
+        </tr>
+
+      </table>
+    </div>
+    <div class="attendance">
+
+      <h4 id="attendance" class="h4">attendance</h4>
+      <div class="date">
+        <p>date: </p>
+        <span id="date"> </span>
+      </div>
+
+
+      <div class="table">
+
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th class="currentDay"></th>
+
+            </tr>
+          </thead>
+          <tbody>
+          
+
+          </tbody>
+
+
+        </table>
+
+      </div>
+<h4 class="h4">Statistics</h4>
+
+      <div class="table">
+        <table id="table2">
+          <thead>
+            <tr>
+              <th class="day">day</th>
+              <th id="dates">date</th>
+              <th class="present">present</th>
+              <th class="absent">absent</th>
+
+            </tr>
+          </thead>
+          <tbody id="tbody">
+
+          </tbody>
+        </table>
+
+      </div>
+<button id="submit">submit</button>
+    </div>
+
+  </section>
+
+
+  <script src="js/home.js"></script>
+  <!-- <script src="js/analytics.js"></script> -->
+  <script src="js/grade1.js"></script>
+  <script src="js/grade1attendance.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #f2fbfa;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 50% auto;
+  padding: 4px;
+  border-radius: 7px;
+  width: 190px;
+  background-color: #4caf50;
+  width: 200px;
+
+}
+
+.h1 {
+ position: absolute;
+ top: 0px;
+ left: 0;
+  font-weight: 500;
+  font-size: 2em;
+  width: inherit;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  background: linear-gradient(to right,rgb(16, 74, 3), #03133d);
+}
+
+.wrapper {
+  background: linear-gradient(rgb(223, 255, 216), #b8f8f0);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.container {
+  max-width: 400px;
+  padding: 20px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: #faf6f6;
+  border-radius: 5px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  outline: none;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.submit a {
+  text-decoration: none;
+  color: #faf6f6;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+div.submit :hover {
+  color: #e0fbf8;
+  font-weight: 900;
+}
+
+#gender,
+#grade {
+  margin-bottom: 15px;
+}
+
+#gender label,
+#grade label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Media query for phones */
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .nav-bar {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .h2 {
+    font-size: 24px;
+  }
+
+  .h3 {
+    font-size: 18px;
+  }
+
+  .student_info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 
+ Media query for tablets and small laptops */
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+    margin-top: 80px;
+  }
+
+
+  .h2 {
+    font-size: 36px;
+  }
+
+  .student_info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+/* Media query for larger screens*/
+@media screen and (min-width: 1201px) {
+  .container {
+    max-width: 90%;
+  }
+
+  
+  .h2 {
+    font-size: 48px;
+  }
+
+  .student_info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 3200px) {
+  .container {
+    max-width: 9000px;
+  }
+
+  .h2 {
+    font-size: 48px;
+  }
+
+  .student_info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+}

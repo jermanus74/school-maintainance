@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(232, 237, 255);
+}
+
+.title {
+  margin: 0;
+  background: rgb(255, 169, 169);
+  position: sticky;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 0 0 10px;
+}
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  border: 1px solid red;
+  padding: 3px;
+  box-shadow: 0 0 10px rgb(255, 6, 6), inset 5px 5px 15px rgb(187, 41, 41),
+    inset -5px -5px 15px rgba(5, 101, 255, 0.914),
+    inset 5px -5px 15px rgb(15, 69, 195),
+    inset -5px 5px 15px rgba(208, 11, 11, 0.769);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  text-transform: capitalize;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #adfdc5;
+}
+
+tr:nth-child(odd) {
+  background-color: #f5b7b7;
+}
+.grades {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 2px solid blue;
+  margin: 10px;
+  gap: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.grades a{
+  text-decoration: none;
+color: rgb(3, 10, 110);
+font-weight: 400;
+cursor: pointer;
+}
+.grades a:hover{
+  color: rgb(4, 7, 181);
+}
+.grades .grade1,
+.grades .grade2,
+.grades .grade3,
+.grades .grade4{
+  background: rgb(255, 255, 222);
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  color: #08da3d;
+  font-weight: 400;
+}
+.h3,.h4{
+  color: #ddd;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+ 
+}
+.h3 {
+  cursor: none;
+}
+.h4{
+  cursor: pointer;
+}

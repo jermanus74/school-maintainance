@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.analytic{
+   padding: 20px;
+    background: #ffffff;
+    color: rgb(2, 37, 67);
+    align-items: center;
+    text-align: left;
+    height: 100vh;
+    font-weight: 450;
+}
+.details{
+    display: grid;
+    text-align: right;
+    grid-template-columns: repeat(1,1fr);
+    align-items: baseline;
+    padding: 10px;
+}
+p{
+    color: black;
+    font-size: 1.3em;
+}
+#analyticsDate{
+    color: #1a0675;
+}
+#analyticsPresent{
+color: green;
+}
+#analyticsAbsent{
+    color: red;
+}
